@@ -1,0 +1,30 @@
+Instruction 1
+
+public class ZooManagement {
+    private static int nbrCages = 20;
+    private static String zooName = "my zoo";
+    public static void displayZooInfo() {
+        System.out.println(zooName + " comporte " + nbrCages + " cages.");
+    }
+
+    public static void main(String[] args) {
+        displayZooInfo();
+    }
+}
+
+Instruciton 2
+import java.util.Scanner;
+
+public class ZooManagement {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Veuillez entrer le nombre de cages : ");
+        int nbrCages = scanner.nextInt();
+        scanner.nextLine(); 
+        System.out.print("Veuillez entrer le nom du zoo : ");
+        String zooName = scanner.nextLine();
+        System.out.println(zooName + " comporte " + nbrCages + " cages.");
+        scanner.close();
+    }
+}
